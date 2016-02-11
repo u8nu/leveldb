@@ -8,3 +8,6 @@ before_install:
 - echo $LC_ALL
 script:
 - make -j 4 check
+branches:
+  only:
+    - u8nu/1.18.x
