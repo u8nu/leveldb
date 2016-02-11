@@ -6,6 +6,8 @@ sudo: false
 before_install:
 - echo $LANG
 - echo $LC_ALL
+- sudo apt-get -qq update
+- sudo apt-get install -y libsnappy-dev
 script:
 - make -j 4 check
 branches:
