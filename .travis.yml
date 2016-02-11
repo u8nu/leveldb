@@ -2,7 +2,7 @@ language: cpp
 compiler:
 - clang
 - gcc
-sudo: false
+sudo: required
 before_install:
 - echo $LANG
 - echo $LC_ALL
